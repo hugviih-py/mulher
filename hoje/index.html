@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dia da Mulher</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background: linear-gradient(135deg,#ff7eb3,#ff4da6);
+text-align:center;
+color:white;
+}
+
+h1{
+padding:30px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+color:black;
+border-radius:15px;
+padding:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+margin-top:10px;
+padding:10px;
+border:none;
+background:#ff4da6;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e60073;
+}
+
+.mensagem{
+margin-top:10px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🌸 Feliz Dia da Mulher 🌸</h1>
+
+<div class="galeria">
+
+<div class="card">
+<img src="images/1.png">
+<button onclick="msg(0)">Mensagem</button>
+<p class="mensagem" id="m0"></p>
+</div>
+
+<div class="card">
+<img src="images/2.png">
+<button onclick="msg(1)">Mensagem</button>
+<p class="mensagem" id="m1"></p>
+</div>
+
+<div class="card">
+<img src="images/3.png">
+<button onclick="msg(2)">Mensagem</button>
+<p class="mensagem" id="m2"></p>
+</div>
+
+<div class="card">
+<img src="images/4.png">
+<button onclick="msg(3)">Mensagem</button>
+<p class="mensagem" id="m3"></p>
+</div>
+
+<div class="card">
+<img src="images/5.png">
+<button onclick="msg(4)">Mensagem</button>
+<p class="mensagem" id="m4"></p>
+</div>
+
+<div class="card">
+<img src="images/6.png">
+<button onclick="msg(5)">Mensagem</button>
+<p class="mensagem" id="m5"></p>
+</div>
+
+<div class="card">
+<img src="images/7.png">
+<button onclick="msg(6)">Mensagem</button>
+<p class="mensagem" id="m6"></p>
+</div>
+
+<div class="card">
+<img src="images/8.png">
+<button onclick="msg(7)">Mensagem</button>
+<p class="mensagem" id="m7"></p>
+</div>
+
+<div class="card">
+<img src="images/9.png">
+<button onclick="msg(8)">Mensagem</button>
+<p class="mensagem" id="m8"></p>
+</div>
+
+<div class="card">
+<img src="images/10.png">
+<button onclick="msg(9)">Mensagem</button>
+<p class="mensagem" id="m9"></p>
+</div>
+
+<div class="card">
+<img src="images/11.png">
+<button onclick="msg(10)">Mensagem</button>
+<p class="mensagem" id="m10"></p>
+</div>
+
+</div>
+
+<script>
+
+const mensagens = [
+"Você é forte e incrível! 💪",
+"O mundo é melhor com você! 🌍",
+"Coragem e beleza definem você! ✨",
+"Você inspira todos ao seu redor! 🌸",
+"Nunca subestime o poder de uma mulher! 👑",
+"Inteligência e força caminham com você! 💖",
+"Mulheres mudam o mundo! 🌎",
+"Você é inspiração! 🌟",
+"Sua coragem faz história! 📖",
+"Respeito e admiração hoje e sempre! 💐",
+"Feliz Dia da Mulher! 🌷"
+]
+
+function msg(n){
+document.getElementById("m"+n).innerText = mensagens[n]
+}
+
+</script>
+
+</body>
+</html>
